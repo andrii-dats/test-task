@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>WeatherApi</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>WeatherApi</PackageId>
+    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\js\main.js\**" />
+    <Content Remove="wwwroot\js\main.js\**" />
+    <EmbeddedResource Remove="wwwroot\js\main.js\**" />
+    <None Remove="wwwroot\js\main.js\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\styles.css" />
+    <Content Include="wwwroot\images\average.png" />
+    <Content Include="wwwroot\images\average_value_filled1600.png" />
+    <Content Include="wwwroot\images\cloudy.svg" />
+    <Content Include="wwwroot\images\humidity.png" />
+    <Content Include="wwwroot\images\maximum.png" />
+    <Content Include="wwwroot\images\minimum.png" />
+    <Content Include="wwwroot\images\pressure.png" />
+    <Content Include="wwwroot\images\ring.svg" />
+    <Content Include="wwwroot\images\search-icon.svg" />
+    <Content Include="wwwroot\images\shining-sun.svg" />
+    <Content Include="wwwroot\images\sky\weezle_cloud.png" />
+    <Content Include="wwwroot\images\sky\weezle_max_cloud.png" />
+    <Content Include="wwwroot\images\sky\weezle_medium_cloud.png" />
+    <Content Include="wwwroot\images\sky\weezle_overcast.png" />
+    <Content Include="wwwroot\images\sky\weezle_sun.png" />
+    <Content Include="wwwroot\images\sky\weezle_sun_maximum_clouds.png" />
+    <Content Include="wwwroot\images\sky\weezle_sun_minimal_clouds.png" />
+    <Content Include="wwwroot\images\sky\weezle_sun_most_cloudy.png" />
+    <Content Include="wwwroot\images\sun.svg" />
+    <Content Include="wwwroot\images\thermometer.svg" />
+    <Content Include="wwwroot\js\index.html" />
+    <Content Include="wwwroot\js\ui-bootstrap-tpls-2.3.0.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.0.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>

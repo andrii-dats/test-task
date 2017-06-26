@@ -1,0 +1,61 @@
+﻿html, body {
+  background-color: #f4f7f9;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+}
+
+/*flexbox*/
+.flex-container {
+  width: 80%;
+  margin-left: 10%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: stretch;
+}
+/*---*/
+.label-el {
+  text-align: center;
+}
+.label-content {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+.date {
+  background-color: yellow;
+  font-size: 15px;
+}
+.temp {
+  background-color: white;
+}
+.temp img {
+  width: 100px;
+}
+.apparent {
+  background-color: #f3f8fe;
+  height: 120px;
+  text-align: left;
+  padding-left: 30px;
+}
+#single-apper {
+  min-height: 130px;
+}
+.apparent img {
+  width: 32px;
+}
+.cloud img {
+  width: 32px;
+  margin: 5px;
+}
+.cloud {
+  background-color: #CEE1F4;
+  text-align: left;
+  padding-left: 10px;
+}

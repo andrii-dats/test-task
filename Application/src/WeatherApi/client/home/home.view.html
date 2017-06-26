@@ -1,0 +1,26 @@
+﻿<!-- <div>{{vm.message}}</div> -->
+<!-- <div ng-app="weatherApp"> -->
+	<div class="body-content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-4"></div>
+						<div class="col-md-4">
+							<h2 class="form-signin-heading">Get weather form Forecast.io</h2>							
+							<div class="input-group">							
+								<input name="cities" class="form-control" type="text" placeholder="Search weather by city" ng-model="selected" uib-typeahead="city as city.description for city in cities.getCities($viewValue) " required autofocus>
+								<div class="input-group-btn">
+									<div class="btn-group" role="group">
+										<button type="submit" ng-model="selected" ng-disabled="!vm.buttDisable(selected)" ng-click="vm.showData(selected)" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="col-md-4"></div>					
+				</div>
+			</div>		
+<weather ng-model='vm.weatherData' ng-repeat='e in vm.weatherData'></weather>
+				
+		</div>  		
+	</div>
+

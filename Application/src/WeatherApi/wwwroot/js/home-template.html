@@ -1,0 +1,81 @@
+<div class="flex-container text-center">
+    <div class="label-el" ng-if="$index < 1" class="flex-element">
+        <div class="label-content">
+            <div class="date">{{e.date}}</div>
+            <div class="temp">
+                <img class="weatherStatusImg" src="https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=39457430" />
+                <p>{{e.temperature}} &#176 F</p>
+                <br />
+            </div>
+            <div class="apparent" id="single-apper">
+                <div>
+                    <br />
+                    <b>Apparent</b>
+                    <img src="https://image.flaticon.com/icons/svg/316/316045.svg" />
+                    <p>
+                        <span>
+                          <img src="https://image.flaticon.com/icons/svg/271/271242.svg" />
+                          {{e.apparentTemperature}} &#176 F                          
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="cloud">
+                <div>
+                    <img src="https://image.flaticon.com/icons/svg/56/56435.svg" />
+                    <span>{{e.humidity}}%</span>
+                </div>
+                <div>
+                    <img src="https://image.flaticon.com/icons/svg/56/56396.svg" />
+                    <span>{{e.pressure}} mbar</span>
+                </div>
+                <div>
+                    <img src="https://image.flaticon.com/icons/svg/80/80378.svg" />
+                    <span class="cloudCover" alt="{{e.cloudCover}}">{{e.cloudCover}}%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="label-el" ng-if="$index >= 1" class="flex-element">
+        <div class="label-content">
+            <div class="date">{{e.date}}</div>
+            <div class="temp">
+                <img class="weatherStatusImg" src="http://findicons.com/files/icons/2614/weather_icons/100/1.png" />
+                <p>{{e.temperatureMax}} &#176 F</p>
+                <p>{{e.temperatureMin}} &#176 F</p>
+            </div>
+            <div class="apparent">
+                <div>
+                    <b>Apparent</b>
+                    <img src="https://image.flaticon.com/icons/svg/316/316045.svg" />
+                    <p>
+                        <img src="https://image.flaticon.com/icons/svg/25/25435.svg" /> {{e.apparentTemperatureMax}} &#176
+                        F
+                    </p>
+                    <p>
+                        <img src="https://image.flaticon.com/icons/svg/25/25238.svg" /> {{e.apparentTemperatureMin}} &#176
+                        F
+                    </p>
+                </div>
+                <br />
+            </div>
+            <div class="cloud">
+                <div>
+                    <img src="https://image.flaticon.com/icons/svg/56/56435.svg" />
+                    <span>{{e.humidity}}%</span>
+                </div>
+                <div>
+                    <img src="https://image.flaticon.com/icons/svg/56/56396.svg" />
+                    <span>{{e.pressure}} mbar</span>
+                </div>
+                <div>
+                    <img src="https://image.flaticon.com/icons/svg/80/80378.svg" />
+                    <span>{{e.cloudCover}}%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
